@@ -1,0 +1,68 @@
+
+body{
+    background-color: rgb(255, 194, 179);
+    display:grid;
+    
+   grid-template-areas:
+    "cabeca cabeca cabeca"
+    "secund princip princip"
+    "rodap rodap rodap"
+}
+header{
+    background-color: rgb(253, 255, 240);
+    grid-area: cabeca;
+    height: 300px;
+    width:100%;
+    
+}
+main{
+    background-color: rgb(252, 242, 219);
+    grid-area: princip;
+    height: 800px;
+}
+aside{
+    background-color: rgb(220, 248, 213);
+    grid-area: secund;
+}
+footer{
+    background-color: rgb(253, 255, 240);
+    grid-area: rodap;
+    font:Montserrat;
+    
+}
+footer img{
+    width: 40px;
+}
+@media(max-width:800px) {
+    header{
+    flex-direction: column;
+    background-color: brown;
+    }
+    
+}
+@media(max-width:400px){
+    header{
+        flex-direction: column;
+        background-color: coral;
+    }
+    .logotipo{
+        flex-direction: column;
+        width: 100px;
+    }
+}
+.logotipo{
+    width: 250px;
+
+}
+.brinco1{
+    width: 400px;
+}
+.caixamae{
+    display: flex;
+    flex
+}
+.card{
+    display: flex;
+    border-radius: 10px;
+
+}
