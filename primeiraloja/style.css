@@ -16,12 +16,12 @@ header{
     
 }
 main{
-    background-color: rgb(252, 242, 219);
+    background-color: rgb(255, 186, 189);
     grid-area: princip;
     height: 800px;
 }
 aside{
-    background-color: rgb(220, 248, 213);
+    background-color: rgb(202, 255, 204);
     grid-area: secund;
 }
 footer{
@@ -54,15 +54,24 @@ footer img{
     width: 250px;
 
 }
-.brinco1{
-    width: 400px;
+main img{
+    width: 250px;
 }
 .caixamae{
     display: flex;
-    flex
+    flex-wrap:wrap;
+    justify-content: center;
 }
 .card{
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 30px;
+    transition: 0,4s;
 
 }
