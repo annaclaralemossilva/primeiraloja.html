@@ -11,52 +11,62 @@ body{
 header{
     background-color: rgb(253, 255, 240);
     grid-area: cabeca;
-    height: 300px;
-    width:100%;
+    height: auto;
     
 }
 main{
     background-color: rgb(255, 212, 212);
     grid-area: princip;
     height: auto;
+    width: 300px;
+    display: flex;
 }
 aside{
     background-color: rgb(202, 255, 204);
     grid-area: secund;
+    height:auto;
+    position: relative;
 }
 footer{
     background-color: rgb(253, 255, 240);
     grid-area: rodap;
-    
+    height: auto;
     
 }
 footer img{
     width: 40px;
 }
 @media(max-width:800px) {
-    header{
-    flex-direction: column;
-    background-color: brown;
+   
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "secund"
+        "pricip"
+        "rodap";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+
     }
-    
 }
 @media(max-width:400px){
-    header{
-        flex-direction: column;
-        background-color: coral;
-    }
-    .logotipo{
-        flex-direction: column;
-        width: 100px;
-    }
+     body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca"
+    "secun"
+    "princip"
+    "rodap";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+        }
 }
+
+    
 .logotipo{
     width: 250px;
 
-}
-main img{
-    width: 200px;
-    height: 250px;
 }
 .caixamae{
     display: flex;
@@ -73,11 +83,33 @@ main img{
     justify-content: center;
     align-items:center;
     margin: 30px;
-    transition: 0,6s;
+    transition: 1s;
+    
 
 }
 .card:hover{
     background-color:rgba(237, 234, 234)
+}
+
+.card a{
+    border-radius: 30px;
+    background-color: #70A490;
+    display: block;
+    height: 25px;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+
+}
+.card a:hover{
+    background-color:#629280;
+}
+.card img {
+    width: 200px;
+    height: 250px;
+
 }
 
 #EDEAEA (codigo fundo)
