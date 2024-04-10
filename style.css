@@ -1,4 +1,7 @@
 
+*{
+    margin: 0;
+}
 body{
     background-color: rgb(252, 203, 207);
     display:grid;
@@ -30,11 +33,17 @@ aside{
 footer{
     background-color: rgb(253, 255, 240);
     grid-area: rodap;
-    height: auto;
-    
+    height: auto; 
 }
 footer img{
     width: 40px;
+    margin-left: 20px;
+}
+.contas {
+    border:2px red solid;
+    position: absolute;
+    margin-left: 300px;
+
 }
 @media(max-width:800px) {
    
@@ -68,6 +77,7 @@ footer img{
     width: 250px;
 
 }
+
 .caixamae{
     display: flex;
     flex-wrap:wrap;
@@ -112,4 +122,4 @@ footer img{
 
 }
 
-#EDEAEA (codigo fundo)
+#EDEAEA 
