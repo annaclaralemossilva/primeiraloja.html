@@ -15,12 +15,13 @@ body{
 header{
     background-color: rgb(253, 255, 240);
     grid-area: cabeca;
-    height: auto;
+    height: 230px;
     width: auto;
 }
 main{
     background-color: rgb(255, 212, 212);
     grid-area: princip;
+    height:auto;
 
 }
 aside{
@@ -28,6 +29,7 @@ aside{
     grid-area: secund;
     height:auto;
     position: relative;
+
 }
 footer{
     background-color: rgb(253, 255, 240);
@@ -73,32 +75,39 @@ footer img{
 
     
 .logotipo{
-    width: 250px;
-
+    width: 200px;
+    margin: auto;
+    display:block;
+    transition:1s;
+}
+.logotipo:hover{
+    width: 220px;
 }
 
 .caixamae{
     display: flex;
     flex-wrap:wrap;
     justify-content:center;
-      margin-left: 30px;
+    padding: 20px;
 }
 .card{
     display: flex;
     border-radius: 5px;
     background-color: rgb(253, 255, 240);
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 400px;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     margin: 30px;
     transition: 1s;
     position: relative;
+    color: #5e6e68;
 
 }
 .card:hover{
-    background-color:rgba(237, 234, 234)
+    background-color:rgba(237, 234, 234);
+    
 }
 
 .card a{
@@ -117,7 +126,14 @@ footer img{
     background-color:#629280;
 }
 .card img {
-    width: 200px;
-    height: 250px;
+    width: 150px;
+    transition: 0.7s;
 
+}
+.card img:hover{
+    width:200px;
+
+}
+.card img{
+   
 }
