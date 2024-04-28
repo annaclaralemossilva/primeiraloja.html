@@ -126,12 +126,12 @@ footer img{
     background-color:#629280;
 }
 .card img {
-    width: 150px;
+    width: 140px;
     transition: 0.7s;
 
 }
 .card img:hover{
-    width:200px;
+    width:160px;
 
 }
 .card img{
