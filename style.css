@@ -1,16 +1,21 @@
 
 *{
     margin: 0;
-    
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 body{
-    background-color: rgb(252, 203, 207);
+    background-color:rgb(253, 255, 240);
     display:grid;
     
    grid-template-areas:
     "cabeca cabeca cabeca"
     "secund princip princip"
-    "rodap rodap rodap"
+    "rodap rodap rodap";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
 }
 header{
     background-color: rgb(253, 255, 240);
@@ -19,18 +24,19 @@ header{
     width: auto;
 }
 main{
-    background-color: rgb(255, 212, 212);
+    background-color: rgb(255, 247, 241);
     grid-area: princip;
     height:auto;
 
 }
 aside{
-    background-color: rgb(202, 255, 204);
+    background-color: rgb(214, 228, 215);
     grid-area: secund;
     height:auto;
     position: relative;
 
-}
+} grid-template-columns: auto;
+grid-template-rows: auto auto auto auto;
 footer{
     background-color: rgb(253, 255, 240);
     grid-area: rodap;
@@ -103,6 +109,7 @@ footer img{
     transition: 1s;
     position: relative;
     color: #5e6e68;
+    box-shadow: #5e6e68;
 
 }
 .card:hover{
