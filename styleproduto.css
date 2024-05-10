@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 600;
+}
+body{
+    background-color:rgb(253, 255, 240);
+    display:grid;
+    
+   grid-template-areas:
+    "cabeca cabeca cabeca"
+    "secund princip princip"
+    "rodap rodap rodap";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+}
+header{
+    background-color: rgb(253, 255, 240);
+    grid-area: cabeca;
+    height: 230px;
+    width: auto;
+}
+main{
+    background-color: rgb(255, 247, 241);
+    grid-area: princip;
+    height:auto;
+
+}
+aside{
+    background-color: rgb(214, 228, 215);
+    grid-area: secund;
+    height:auto;
+    position: relative;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto auto;
+} 
+footer{
+    background-color: rgb(253, 255, 240);
+    grid-area: rodap;
+    height: auto; 
+}
+.logotipo{
+    width: 200px;
+    margin: auto;
+    display:block;
+    transition:1s;
+}
+.logotipo:hover{
+    width: 220px;
+}
+@media(max-width:800px) {
+   
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "secund"
+        "pricip"
+        "rodap";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+
+    }
+}
+@media(max-width:400px){
+     body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca"
+    "secun"
+    "princip"
+    "rodap";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+        }
+}
+.caixamae{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+.card{
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(253, 255, 240);
+    width: 450px;
+    height: 450px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin: 30px;
+    transition: 1s;
+    position: relative;
+    color: #5e6e68;
+    
+}
+.card img {
+    width: 400px;
+    height:400px;
+    transition: 0.7s;
+
+}

@@ -3,8 +3,9 @@
     margin: 0;
     font-family: "Edu SA Beginner", cursive;
     font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+    font-style:normal;
+    font-weight: 600;
+    text-decoration:none;
 }
 body{
     background-color:rgb(253, 255, 240);
@@ -23,6 +24,7 @@ header{
     height: 230px;
     width: auto;
 }
+
 main{
     background-color: rgb(255, 247, 241);
     grid-area: princip;
@@ -34,9 +36,9 @@ aside{
     grid-area: secund;
     height:auto;
     position: relative;
-
-} grid-template-columns: auto;
-grid-template-rows: auto auto auto auto;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto auto;
+} 
 footer{
     background-color: rgb(253, 255, 240);
     grid-area: rodap;
@@ -109,12 +111,10 @@ footer img{
     transition: 1s;
     position: relative;
     color: #5e6e68;
-    box-shadow: #5e6e68;
-
+    
 }
 .card:hover{
     background-color:rgba(237, 234, 234);
-    
 }
 
 .card a{
@@ -127,20 +127,17 @@ footer img{
     text-decoration: none;
     color: aliceblue;
     transition: 1s;
-
 }
 .card a:hover{
     background-color:#629280;
 }
 .card img {
-    width: 140px;
+    width: 145px;
+    height: 140px;
     transition: 0.7s;
 
 }
 .card img:hover{
     width:160px;
-
-}
-.card img{
-   
+    height:165px;
 }
