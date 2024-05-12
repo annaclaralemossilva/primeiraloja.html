@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-style:normal;
     font-weight: 600;
+    text-decoration:none;
 }
 body{
     background-color:rgb(253, 255, 240);
@@ -40,6 +41,36 @@ footer{
     background-color: rgb(253, 255, 240);
     grid-area: rodap;
     height: auto; 
+}
+.info{
+    margin-top: 20px;
+    color: #5e6e68;
+    text-decoration: none;
+    text-align: center;
+}
+footer img{
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+footer img:hover{
+    transition: 0,7s;
+    filter:brightness(120%);
+}
+li{
+    list-style-type: none;
+}
+a{ 
+    color: inherit; 
+} 
+a:hover{
+    transition: 0,7s;
+    color:#a7cabd;
+}
+.contas {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 47%;
 }
 .logotipo{
     width: 200px;
@@ -94,11 +125,12 @@ footer{
     transition: 1s;
     position: relative;
     color: #5e6e68;
-    
 }
-.card img {
+.anel {
     width: 400px;
-    height:400px;
     transition: 0.7s;
-
+}
+.anel:hover{
+    width: 430px;
+    filter: brightness(110%);
 }
