@@ -51,8 +51,8 @@ footer{
 }
 footer img{
     width: 40px;
-    margin-left: 20px;
-    margin-top: 30px;
+    position: relative;
+
 }
 footer img:hover{
     transition: 0,7s;
@@ -70,8 +70,47 @@ a:hover{
 }
 .contas {
     position: absolute;
-    margin-top: 150px;
-    margin-left: 47%;
+    margin-top: 160px;
+    left: 49%;
+}
+.menu {
+    width: 40px;
+    height:40px;
+}
+input[type="checkbok"]:checked ~ nav{
+    transform: translateX(350px);
+}
+nav{
+    background-color: aqua;
+    width:350px;
+    height: 100%;
+    left: -350px;
+    position: relative;
+}
+nav a{
+    text-decoration:none;
+    display:block;
+    color: brown;
+    background-color: chartreuse;
+    padding: 20px 5px;
+}
+label{
+    padding:15px;
+    position: absolute;
+    z-index: 1;
+    top:45px;
+    left:90px;
+}
+input[type="checkbox"]{
+    display:none;
+}
+a:hover{
+    background-color:blue;
+}
+ul{
+    position:absolute;
+    top:50px;
+    width:100%;
 }
 @media(max-width:800px) {
    
