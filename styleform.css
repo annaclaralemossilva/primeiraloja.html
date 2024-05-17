@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 600;
+    text-decoration:none;
+}
+body{
+    background-color:#a3cfbf ;
+}
+.bloco label{
+    display: block;
+}
+.bloco{
+    
+    margin-right: 5px;
+}
