@@ -9,28 +9,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
-
 <body onload="ola">
-    <script src="script.js"></script>
-    <header> 
-    <img src="imagens/logotipo.jpg" class="logotipo" alt="logo">
-    </header>
-    <aside>
-        <input type="checkbox" id="check">
-            <label for="check">
-                <img class="menu" src="imagens/anel.png">
-            </label>
-        <nav>
+    <header>
+        <!--Barra de pesquisa-->
+        <div class="pesquisa">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Pesquisar..." class="barra">
+                <button type="submit" class="botao"><img src="imagens/pesquisa.png" class="lupa"></button>
+            </form>
+        </div>
+        <img src="imagens/logotipo.jpg" class="logotipo" alt="logo">
+        <nav class="menu">
             <ul>
-                <li>Perfil</li>
-                <li>Entrar</li>
-                <li>Sair</li>
+                <!--inicio do menu-->
+                <li class="drop">
+                    <a href="#">Brincos</a>
+                    <!--opções-->
+                    <ul class="down">
+                        <li><a href="#">Argola</a></li>
+                        <li><a href="#">Gancho</a></li>
+                        <li><a href="#">Chandelier</a></li>
+                        <li><a href="#">Stud</a></li>
+                        <li><a href="#">Ear Cuff</a></li>
+                    </ul>
+                    <!--fim opções-->
+                </li>
+                <li class="drop">
+                    <a href="#">Colares</a>
+                    <!--opções-->
+                    <ul class="down">
+                        <li><a href="#">Corrente</a></li>
+                        <li><a href="#">Curto</a></li>
+                        <li><a href="#">Longo</a></li>
+                        <li><a href="#">Duplo</a></li>
+                    </ul>
+                    <!--fim opções-->
+                </li>
+                <li><a href="#">Pulseiras</a></li>
+                <li><a href="#">Anéis</a></li>
+                <!--fim do menu-->
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+       <!--Ínicio menu-->
+        <nav class="ret">
+            <ul>
+                <li class="drop1">
+                    <a href="#"><img src="imagens/menu.png" class="imgmenu"></a>
+                    <ul class="down2">
+                        <!--ícone ínicio-->
+                        <a href="index.html"><img src="imagens/home.png" class="icon"></a>
+                        <li><a href="index.html">Ínicio</a></li>
+                        <!--ícone curtidos-->
+                        <a href="#"><img src="imagens/coracao1.png" class="icon"></a>
+                        <li><a href="#">Curtidos</a></li>
+                        <!--ícone carrinho-->
+                        <a href="carinho.html"><img src="imagens/carrinho.png" class="icon"></a>
+                        <li><a href="carinho.html">Carrinho</a></li>
+                        <!--ícone formulário-->
+                        <a href="form.html"><img src="imagens/perfil.png" class="icon"></a>
+                        <li><a href="form.html">Perfil</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </aside>
-    <main>
-
-        
+    <main>      
         <section class="caixamae">
             <!-- inicio do card -->
             <div class="card">
@@ -177,13 +222,15 @@
             </div>
             <!-- fim card -->
         </section>
-
-    
     </main>
-
     <footer>
         <div class="contas">
-            <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" ><img src="imagens/insta.png" class="insta" alt="instagram"></a>
+            <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" >
+                <img src="imagens/insta.png" class="contas1" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="imagens/face.png" class="contas2" alt="facebook">
+            </a>
     </div>
         <div class="info">
         <h2>⊱Informações⊰</h2>
