@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOJA</title>
+    <title>Seja Bem VIndo(a) ao Jadim Encatando!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body onload="ola">
+
     <!--cabeçalho-->
 <header>
         <!--Barra de pesquisa-->
@@ -20,18 +21,28 @@
             </form>
         </div>
         <img src="imagens/logotipo.jpg" class="logotipo" alt="logo">
-        <nav class="menu">
+        <nav class="menu1">
             <ul>
                 <!--inicio do menu-->
                 <li class="drop">
                     <a href="#">Brincos</a>
                     <!--opções-->
                     <ul class="down">
-                        <li><a href="#">Argola</a></li>
-                        <li><a href="#">Gancho</a></li>
-                        <li><a href="#">Chandelier</a></li>
-                        <li><a href="#">Stud</a></li>
-                        <li><a href="#">Ear Cuff</a></li>
+                        <li>
+                            <a href="#">Argola</a>
+                        </li>
+                        <li>
+                            <a href="#">Gancho</a>
+                        </li>
+                        <li>
+                            <a href="#">Chandelier</a>
+                        </li>
+                        <li>
+                            <a href="#">Stud</a>
+                        </li>
+                        <li>
+                            <a href="#">Ear Cuff</a>
+                        </li>
                     </ul>
                     <!--fim opções-->
                 </li>
@@ -39,37 +50,70 @@
                     <a href="#">Colares</a>
                     <!--opções-->
                     <ul class="down">
-                        <li><a href="#">Corrente</a></li>
-                        <li><a href="#">Curto</a></li>
-                        <li><a href="#">Longo</a></li>
-                        <li><a href="#">Duplo</a></li>
+                        <li>
+                            <a href="#">Corrente</a>
+                        </li>
+                        <li>
+                            <a href="#">Curto</a>
+                        </li>
+                        <li>
+                            <a href="#">Longo</a>
+                        </li>
+                        <li>
+                            <a href="#">Duplo</a>
+                        </li>
                     </ul>
                     <!--fim opções-->
                 </li>
-                <li><a href="#">Pulseiras</a></li>
-                <li><a href="#">Anéis</a></li>
+                <li>
+                    <a href="#">Pulseiras</a>
+                </li>
+                <li>
+                    <a href="#">Anéis</a>
+                </li>
             <!--fim do menu-->
             </ul>
         </nav>
-</header>
-    <!--Menu lateral-->
-    <aside class="sidebar">
-                <ul class="down2">  
-                    <!--Ícone Ínicio-->
-                    <li><a href="index.html" class="text"><img src="imagens/home.png" class="icon">Ínicio</a></li>    
-                    <!--Ícone Curtidos-->            
-                    <li><a href="#" class="text"><img src="imagens/coracao1.png" class="icon">Curtidos</a></li>
-                    <!--Ícone Carrinho-->
-                    <li><a href="car.html" class="text"><img src="imagens/carrinho.png" class="icon">Carrinho</a></li>
-                    <!--Ícone Formulário-->
-                    <li><a href="form.html" class="text"><img src="imagens/perfil.png" class="icon">Perfil</a></li>
-                </ul>
-
-</aside>
+</header> 
+<!--Menu lateral-->
+<aside>
+    <div id="red">
+        <label for="toogle"><img src="imagens/menu.png"class="menuimg"></label>
+        <input id="toogle" type="checkbox" name="menu2">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="imagens/home.png" class="iconf">
+                        <span>Ínicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="imagens/coracao1.png" class="iconf">
+                        <span>Lista de Desejos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <img src="imagens/perfil.png" class="iconf">
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="car.html">
+                        <img src="imagens/carrinho.png" class="iconf">
+                        <span>Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
+</aside>    
 <main class="maincontent">      
     <section class="caixamae">
         <!-- inicio do card -->
-            <div class="card">
+        <div class="card">
             <img src="imagens/brinco.png" class="brinco" alt="brinco">
             <h1>Brinco de Rosas</h1>
             <div class="preço">
@@ -212,7 +256,7 @@
             </div>
         </div>
         <!-- fim card -->
-        </section>
+        </section>   
 </main>
 <footer>
     <div class="contas">
