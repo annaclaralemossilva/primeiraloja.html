@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body onload="ola">
-    <header>
+    <!--cabeçalho-->
+<header>
         <!--Barra de pesquisa-->
         <div class="pesquisa">
             <form action="/search" method="GET">
@@ -47,198 +48,188 @@
                 </li>
                 <li><a href="#">Pulseiras</a></li>
                 <li><a href="#">Anéis</a></li>
-                <!--fim do menu-->
+            <!--fim do menu-->
             </ul>
         </nav>
-    </header>
+</header>
+    <!--Menu lateral-->
     <aside class="sidebar">
-       <!--Ínicio menu-->
-        <nav class="ret">
-            <ul>
-                <li class="drop1">
-                    <a href="#"><img src="imagens/menu.png" class="imgmenu"></a>
-                    <ul class="down2">
-                        <!--ícone ínicio-->
-                        <a href="index.html"><img src="imagens/home.png" class="icon"></a>
-                        <li><a href="index.html">Ínicio</a></li>
-                        <!--ícone curtidos-->
-                        <a href="#"><img src="imagens/coracao1.png" class="icon"></a>
-                        <li><a href="#">Curtidos</a></li>
-                        <!--ícone carrinho-->
-                        <a href="carinho.html"><img src="imagens/carrinho.png" class="icon"></a>
-                        <li><a href="carinho.html">Carrinho</a></li>
-                        <!--ícone formulário-->
-                        <a href="form.html"><img src="imagens/perfil.png" class="icon"></a>
-                        <li><a href="form.html">Perfil</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-    <main>      
-        <section class="caixamae">
-            <!-- inicio do card -->
+                <ul class="down2">  
+                    <!--Ícone Ínicio-->
+                    <li><a href="index.html" class="text"><img src="imagens/home.png" class="icon">Ínicio</a></li>    
+                    <!--Ícone Curtidos-->            
+                    <li><a href="#" class="text"><img src="imagens/coracao1.png" class="icon">Curtidos</a></li>
+                    <!--Ícone Carrinho-->
+                    <li><a href="car.html" class="text"><img src="imagens/carrinho.png" class="icon">Carrinho</a></li>
+                    <!--Ícone Formulário-->
+                    <li><a href="form.html" class="text"><img src="imagens/perfil.png" class="icon">Perfil</a></li>
+                </ul>
+
+</aside>
+<main class="maincontent">      
+    <section class="caixamae">
+        <!-- inicio do card -->
             <div class="card">
-                <img src="imagens/brinco.png" class="brinco" alt="brinco">
-                <h1>Brinco de Rosas</h1>
-                <div class="preço">
-                    <h4>R$36,00</h4>
-                </div>
-                <div class="desc">
+            <img src="imagens/brinco.png" class="brinco" alt="brinco">
+            <h1>Brinco de Rosas</h1>
+            <div class="preço">
+                <h4>R$36,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/rosa.png" class="brinco" alt="brinco">
-                <h1>Colar de Rosa</h1>
-                <div class="preço">
-                    <h4>R$70,00</h4>
-                </div>
-                <div class="desc">
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/rosa.png" class="brinco" alt="brinco">
+            <h1>Colar de Rosa</h1>
+            <div class="preço">
+                <h4>R$70,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/margarida.png" class="brinco" alt="brinco">
-                <h1>Pulseira de Margaridas</h1>
-                <div class="preço">
-                    <h4>R$75,00</h4>
-                </div>
-                <div class="desc">
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/margarida.png" class="brinco" alt="brinco">
+            <h1>Pulseira de Margaridas</h1>
+            <div class="preço">
+                <h4>R$75,00</h4>
+            </div>
+            <div class="desc">
+            <h3> <a href="#">Saiba mais</a></h3>
+            </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/colarborboleta.png" class="brinco" alt="brinco">
+            <h1>Colar de Borboleta Duplo</h1>
+            <div class="preço">
+                <h4>R$95,00</h4>
+            </div>
+            <div class="desc">
+            <h3><a href="#">Saiba mais</a></h3>
+            </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/pulseira2.png" class="brinco" alt="brinco">
+            <h1>Pulseira floral</h1>
+            <div class="preço">
+                <h4>R$45,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/colarborboleta.png" class="brinco" alt="brinco">
-                <h1>Colar de Borboleta Duplo</h1>
-                <div class="preço">
-                    <h4>R$95,00</h4>
-                </div>
-                <div class="desc">
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/anel.png" class="brinco" alt="brinco">
+            <h1>Anel Borboleta</h1>
+            <div class="preço">
+                <h4>R$68,00</h4>
+            </div>
+            <div class="desc">
+            <h3> <a href="produto.html">Saiba mais</a></h3>
+            </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/brincoa.png" class="brinco" alt="brinco">
+            <h1>Brinco floral</h1>
+            <div class="preço">
+                <h4>R$57,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-             <!-- inicio do card -->
-             <div class="card">
-                <img src="imagens/pulseira2.png" class="brinco" alt="brinco">
-                <h1>Pulseira floral</h1>
-                <div class="preço">
-                    <h4>R$45,00</h4>
-                </div>
-                <div class="desc">
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/brincoo.png" class="brinco" alt="brinco">
+            <h1>Brinco de Borboletas</h1>
+            <div class="preço">
+                <h4>R$85,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/anel.png" class="brinco" alt="brinco">
-                <h1>Anel Borboleta</h1>
-                <div class="preço">
-                    <h4>R$68,00</h4>
-                </div>
-                <div class="desc">
-                <h3> <a href="produto.html">Saiba mais</a></h3>
-                </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/orquidea.png" class="brinco" alt="brinco">
+            <h1>Colar de Orquídea</h1>
+            <div class="preço">
+                <h4>R$79,00</h4>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/brincoa.png" class="brinco" alt="brinco">
-                <h1>Brinco floral</h1>
-                <div class="preço">
-                    <h4>R$57,00</h4>
-                </div>
-                <div class="desc">
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/brincoo.png" class="brinco" alt="brinco">
-                <h1>Brinco de Borboletas</h1>
-                <div class="preço">
-                    <h4>R$85,00</h4>
-                </div>
-                <div class="desc">
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/vrincos.png" class="brinco" alt="brinco">
+            <h1>Argolas de Flores</h1>
+            <div class="preço">
+                <h4>R$35,00</h4>
+            </div>
+            <div class="desc">
+            <h3> <a href="#">Saiba mais</a></h3>
+            </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/anelborboleta.png" class="brinco" alt="brinco">
+            <h1>Anel de Borboletas</h1>
+            <div class="preço">
+                <h4>R$42,00</h4>
+            </div>
+            <div class="desc">
+            <h3> <a href="#">Saiba mais</a></h3>
+            </div>
+        </div>
+        <!-- fim card -->
+        <!-- inicio do card -->
+        <div class="card">
+            <img src="imagens/pulseira3.png" class="brinco" alt="brinco">
+            <h1>Pulseira de Flores</h1>
+            <div class="preço">
+                <h4>R$85,00</h4>
+            </div>
+            <div class="desc">
                 <h3> <a href="#">Saiba mais</a></h3>
-                </div>
             </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/orquidea.png" class="brinco" alt="brinco">
-                <h1>Colar de Orquídea</h1>
-                <div class="preço">
-                    <h4>R$79,00</h4>
-                </div>
-                <div class="desc">
-                <h3> <a href="#">Saiba mais</a></h3>
-                </div>
-            </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/vrincos.png" class="brinco" alt="brinco">
-                <h1>Argolas de Flores</h1>
-                <div class="preço">
-                    <h4>R$35,00</h4>
-                </div>
-                <div class="desc">
-                <h3> <a href="#">Saiba mais</a></h3>
-                </div>
-            </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/anelborboleta.png" class="brinco" alt="brinco">
-                <h1>Anel de Borboletas</h1>
-                <div class="preço">
-                    <h4>R$42,00</h4>
-                </div>
-                <div class="desc">
-                <h3> <a href="#">Saiba mais</a></h3>
-                </div>
-            </div>
-            <!-- fim card -->
-            <!-- inicio do card -->
-            <div class="card">
-                <img src="imagens/pulseira3.png" class="brinco" alt="brinco">
-                <h1>Pulseira de Flores</h1>
-                <div class="preço">
-                    <h4>R$85,00</h4>
-                </div>
-                <div class="desc">
-                <h3> <a href="#">Saiba mais</a></h3>
-                </div>
-            </div>
-            <!-- fim card -->
+        </div>
+        <!-- fim card -->
         </section>
-    </main>
-    <footer>
-        <div class="contas">
-            <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" >
-                <img src="imagens/insta.png" class="contas1" alt="instagram">
-            </a>
-            <a href="#">
-                <img src="imagens/face.png" class="contas2" alt="facebook">
-            </a>
+</main>
+<footer>
+    <div class="contas">
+        <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" >
+            <img src="imagens/insta.png" class="contas1" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="imagens/face.png" class="contas2" alt="facebook">
+        </a>
     </div>
-        <div class="info">
-        <h2>⊱Informações⊰</h2>
+    <div class="info">
+        <h2>⊱Informações⊰</h3>
         <a href="#"><h3>Sobre nós</a>
-        <a href="#"><h3>Formas de pagamento</h3></a>
-        <a href="#"><h3>Política de Privacidade</h3></a>
-        <a href="#"><h3>Trocas e Devoluções</h3></a>
+        <a href="#"><h3>Formas de pagamento</h4></a>
+        <a href="#"><h4>Política de Privacidade</h4></a>
+        <a href="#"><h4>Trocas e Devoluções</h4></a>
     </div>
-    </footer>
+</footer>
 </body>
 </html>
