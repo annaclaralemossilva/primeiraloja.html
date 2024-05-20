@@ -7,22 +7,28 @@
     text-decoration:none;
 }
 body {
-    background-color: rgb(255, 248, 240);
+    background-color: rgb(255, 250, 230);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+
 }
-.form-section {
-    background-color: rgb(253, 255, 240);
+main{
+    background-color: rgb(255, 247, 241);
+    grid-area: prin;
+    height:auto;
+}
+.form {
+    background-color: rgb(255, 243, 240);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(193, 241, 185, 0.1);
+    box-shadow: 0 0 10px #6292808c;
     width: 90%;
     max-width: 500px;
 }
-.form-section h1 {
+.form h1 {
     color: #629280;
     text-align: center;
     margin-bottom: 20px;
@@ -40,21 +46,26 @@ form input, form textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
-form button {
+.form a {
+    border-radius: 30px;
     background-color: #70A490;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+    display: block;
+    margin-top:10px;
+    height: 35px;
     width: 100%;
+    text-align: center ;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
 }
-form button:hover {
+.form a:hover {
     background-color: #629280;
 }
-@media (max-width: 400px) {
-    .form-section {
+@media (max-width: 570px) {
+    .form {
         padding: 15px;
+        width: 80%;
     }
+
+
 }
