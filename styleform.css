@@ -6,13 +6,55 @@
     font-weight: 600;
     text-decoration:none;
 }
-body{
-    background-color:#a3cfbf ;
+body {
+    background-color: rgb(255, 248, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-.bloco label{
+.form-section {
+    background-color: rgb(253, 255, 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(193, 241, 185, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+.form-section h1 {
+    color: #629280;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form label {
     display: block;
+    margin-top: 10px;
+    color: #629280;
 }
-.bloco{
-    
-    margin-right: 5px;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #629280;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+form button {
+    background-color: #70A490;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+form button:hover {
+    background-color: #629280;
+}
+@media (max-width: 400px) {
+    .form-section {
+        padding: 15px;
+    }
 }

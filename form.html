@@ -10,29 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div clas="Cadastro">
-        <div>
+        <!-- Seção do formulário de contato -->
+        <section class="form-section">
             <h1>Cadastro</h1>
-        </div>
-    <form action="#" method="post">
-        <fieldset>
-            <div class="bloco">
-                <label for="nome">Seu nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-            </div>
-        
-            <div class="bloco">
-                <label for="email_aluno">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="bloco">
-                <label for="senha_aluno">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Senha">
-            </div>
-        </fieldset>
-        <div>
-            <button><a href=index.html>Enviar</a></button>
-        </div>
-    </form>
-    </div>
+            <form action="/submit" method="POST">
+                <!-- Campo para o nome -->
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">    
+                <!-- Campo para o e-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <!-- Campo para a senha -->
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">  
+                <!-- Campo para o telefone -->
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone">
+                <!-- Botão de envio -->
+                <button><a href=index.html>Enviar</a></button>
+            </form>
+        </section>
+    
 </body>
