@@ -1,3 +1,4 @@
+/*Alterações gerais*/
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 }
 /*Itens corpo*/
 body {
-    background-color: rgb(255, 247, 241);
+    background-color: rgb(231, 141, 71);
     display:grid;
     grid-template-areas:
     "cabe cabe cabe"
@@ -17,7 +18,7 @@ body {
     "rodap rodap rodap";
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows:auto 1fr auto;
-    height: 100vh;
+    height: 100%;
 }
 li{
     list-style-type: none;
@@ -40,31 +41,37 @@ header{
 .logotipo:hover{
     width: 220px;
 }
+/*Transição links*/
 a:hover{
     transition: 0,7s;
     color:#a7cabd;
 }
+/*posição menu*/
 header ul{
     position:absolute;
     top:50px;
     width:100%;
 }
+/*posição configurações*/
 .menu1 ul{
     list-style-type:none;
     padding-left: 38%;
     padding-top: 9%;
     max-width: 400px;
 }
+/*transição menu down*/
 .menu1 a{
     transition: 0s;
 }
 .menu1 a:hover{
     color:#a7cabd
 }
+/*fim transição menu down*/
 .menu1 ul li{
     display: inline-block;
     position: relative;
 }
+/*configurações menu down*/
 .menu1 ul li a{
     display:block;
     color:#629280;
@@ -75,6 +82,7 @@ header ul{
 .menu1 ul li a :hover{
     background-color: rgb(253, 255, 240);
 }
+/*desaparecimento menu down*/
 .menu1 .down{
     display: none;
     position: absolute;
@@ -94,6 +102,9 @@ header ul{
 .menu1 .drop:hover .down {
     display: block;
 }
+/*fim menu*/
+/*ínicio barra pesquisa*/
+/*configurações barra*/
 .barra {
     background-color: rgb(252, 253, 243);
     padding: 10px;
@@ -102,13 +113,16 @@ header ul{
     border-color: #629280;
     transition: 0s;
 }
+/*transição barra*/
 .barra:hover {
     border-color: #629280;
 }
+/*display formulário*/
 form{
     display: flex;
     align-items:center;
 }
+/*configurações de pesquisa*/
 .pesquisa{
     position: absolute;
     left: 75%;
@@ -121,43 +135,51 @@ form{
 .pesquisa:focus{
     border-color:#629280;
 }
+/*configuração de botão*/
 .botao{
     padding: auto;
     border:none;
     cursor: pointer;
     background-color: rgb(253, 255, 240);
 }
+/*icone lupa tamanho*/
 .lupa{
     width:40px
 }
+/*Fim barra de pesquisa*/
 /*Fim de itens Header*/
 /*Itens Menu secundario*/
+/*configurações aside*/
 aside{
-    background-color: rgb(255, 231, 213);
+    background-color: rgb(255, 247, 241);
     grid-area:brac;
-    height:1%;
-    width: 1%;
+    height:auto;
+    width: auto;
     position: relative;
     grid-template-columns:auto;
     grid-template-rows: auto auto auto auto;
+    display: flex;
 }
+/*tamanho  imagem de menu*/
 .menuimg{
-    width:30px;
-    
+    width:30px;    
 }
+/*tamanho icones do menu*/
 .iconf{
     width:30px;
 }
 main ul{
     padding: 0%;
 }
+/*tamanho menu sem o click*/
 #red nav{
-    background-color: rgb(230, 248, 231);
+    background-color: rgb(225, 255, 205);
     border-radius: 20px;
     width: 60px;
     height: 1650px;
     position: inherit;
 }
+/*configurações dos links*/
 #red li{
     color: #629280;
     padding: 10px;
@@ -168,16 +190,19 @@ main ul{
     color: #629280;
     text-decoration: none;
 }
+/*fim configurações de link*/
 #red a > span{
     text-transform: uppercase;
-    font-size: 0;
+    font-size: 0; /*remover os links*/
     display:flex;
 }
+/*removedor de botão*/
 #toogle {
     display: none;
 }
+/*configurações para que, quando clicado no botão menu, apareçam os links*/
 #toogle:checked + nav{
-    width:300px;
+    width:250px;
     border-radius:5px;
     padding:0 20px;
     transition: 0,5s;
@@ -194,6 +219,7 @@ main ul{
     display: inline-block;
     padding-left: 10px;
 }
+/*fim menu retratil*/
 /*Fim itens Aside*/
 /*Itens Principais*/
 main{
@@ -201,13 +227,16 @@ main{
     grid-area: prin;
     height:100%;
     width:100%;
+    display: flex;
 }
+/*configurações caixa mãe*/
 .caixamae{
     display: flex;
     flex-wrap:wrap;
     justify-content:center;
     padding: 20px;
 }
+/*configurações caixa*/
 .card{
     display:flex;
     border-radius: 5px;
@@ -222,9 +251,11 @@ main{
     position:relative;
     color: #5e6e68;
 }
+/*transição de caixa*/
 .card:hover{
     background-color:rgba(237, 234, 234);
 }
+/*configurações botão da caixa*/
 .card a{
     border-radius: 30px;
     background-color: #70A490;
@@ -236,16 +267,20 @@ main{
     color: aliceblue;
     transition: 1s;
 }
+/*transição botão*/
 .card a:hover{
     background-color:#629280;
 }
+/*tamanho imagem*/
 .card img {
     height: 140px;
 }
+/*transição imagem*/
 .card img:hover{
     transition: 1s;
     filter: brightness(110%);
 }
+/*fim das caixas*/
 /*Fim itens principais*/
 /*Itens Rodapé*/
 footer{
@@ -254,29 +289,35 @@ footer{
     height: 150%; 
     width: 100%;
 }
+/*configurações título*/
 .info{
     margin-top: 20px;
     color:#629280;
     text-decoration: none;
     text-align: center;
 }
+/*configurações imagem*/
 footer img{
     width: 40px;
     position: relative;
     margin-top: 12%;
 }
+/*transição das imagens*/
 footer img:hover{
     transition: 0,7s;
     filter:brightness(110%);
 }
+/*Colocação da logo instagram*/
 .contas1{
     position: absolute;
     margin-left: 46%;
 }
+/*colocação da logo facebook*/
 .contas2{
     position: absolute;
     margin-left:50%;
 }
+/*configuração dos links de informações*/
 footer li{
     list-style-type: none;
 }
@@ -292,6 +333,7 @@ footer ul{
     top:50px;
     width:100%;
 }
+/*fim configurações itens de infomações/*
 /*fim itens Rodapé*/
 /*Responsividade*/
 /*@media(max-width:820px) {
@@ -314,7 +356,7 @@ footer ul{
         position: relative;
         grid-template-columns:auto;
         grid-template-rows: auto auto auto auto;
-    }*/
+    }
 @media(max-width:470px){
     body{
         grid-template-areas: 
@@ -333,7 +375,7 @@ footer ul{
         width: 130px;
     }
     /*Transição logotipo*/
-    .logotipo:hover{
+    /*.logotipo:hover{
         width: 130px;
     }
     .barra {
@@ -354,5 +396,4 @@ footer ul{
     }
     .menu1 .down{
         min-width: 60px;
-    }
-}
+    }*/
