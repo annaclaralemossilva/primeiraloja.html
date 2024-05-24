@@ -1,0 +1,363 @@
+/*Alterações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-style:normal;
+    font-weight: 600;
+    text-decoration:none;
+}
+/*Itens corpo*/
+body {
+    background-color: rgb(231, 141, 71);
+    display:grid;
+    grid-template-areas:
+    "cabe cabe cabe"
+    "brac prin prin"
+    "rodap rodap rodap";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows:auto 1fr auto;
+    height: 100%;
+}
+li{
+    list-style-type: none;
+}
+/*Ínicio Header*/
+header{
+    background-color: rgb(253, 255, 240);
+    grid-area: cabe;
+    height: 230px;
+    width: 100%;
+}
+/*Configurações logotipo*/
+.logotipo{
+    width: 200px;
+    margin: auto;
+    display:block;
+    transition:1s;
+}
+/*Transição logotipo*/
+.logotipo:hover{
+    width: 220px;
+}
+/*Transição links*/
+a:hover{
+    transition: 0,7s;
+    color:#a7cabd;
+}
+/*posição menu*/
+header ul{
+    position:absolute;
+    top:50px;
+    width:100%;
+}
+/*posição configurações*/
+.menu1 ul{
+    list-style-type:none;
+    padding-left: 38%;
+    padding-top: 9%;
+    max-width: 400px;
+}
+/*transição menu down*/
+.menu1 a{
+    transition: 0s;
+}
+.menu1 a:hover{
+    color:#a7cabd
+}
+/*fim transição menu down*/
+.menu1 ul li{
+    display: inline-block;
+    position: relative;
+}
+/*configurações menu down*/
+.menu1 ul li a{
+    display:block;
+    color:#629280;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+.menu1 ul li a :hover{
+    background-color: rgb(253, 255, 240);
+}
+/*desaparecimento menu down*/
+.menu1 .down{
+    display: none;
+    position: absolute;
+    min-width:100px;
+    z-index: 1;
+    background-color: rgb(253, 255, 240);
+}
+.menu1 .down li {
+    display: block;
+}
+.menu1 .down li a {
+    padding: 15px 14px;
+}
+.menu1 .down li a:hover {
+    background-color: rgb(253, 255, 240);
+}
+.menu1 .drop:hover .down {
+    display: block;
+}
+/*fim menu*/
+/*ínicio barra pesquisa*/
+/*configurações barra*/
+.barra {
+    background-color: rgb(252, 253, 243);
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    border-color: #629280;
+    transition: 0s;
+}
+/*transição barra*/
+.barra:hover {
+    border-color: #629280;
+}
+/*display formulário*/
+form{
+    display: flex;
+    align-items:center;
+}
+/*configurações de pesquisa*/
+.pesquisa{
+    position: absolute;
+    left: 75%;
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    border: none;
+}
+.pesquisa:focus{
+    border-color:#629280;
+}
+/*configuração de botão*/
+.botao{
+    padding: auto;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(253, 255, 240);
+}
+/*icone lupa tamanho*/
+.lupa{
+    width:40px
+}
+/*Fim barra de pesquisa*/
+/*Fim de itens Header*/
+/*Itens Menu secundario*/
+/*configurações aside*/
+aside{
+    background-color: rgb(255, 247, 241);
+    grid-area:brac;
+    height:auto;
+    width: auto;
+    position: relative;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto auto;
+    display: flex;
+}
+/*tamanho  imagem de menu*/
+.menuimg{
+    width:30px;    
+}
+/*tamanho icones do menu*/
+.iconf{
+    width:30px;
+}
+main ul{
+    padding: 0%;
+}
+/*tamanho menu sem o click*/
+#red nav{
+    background-color: rgb(225, 255, 205);
+    border-radius: 20px;
+    width: 60px;
+    height: 1000px;
+    position: inherit;
+}
+/*configurações dos links*/
+#red li{
+    color: #629280;
+    padding: 10px;
+    font-size:15px;
+    text-align: center;
+}
+#red li > a{
+    color: #629280;
+    text-decoration: none;
+}
+/*fim configurações de link*/
+#red a > span{
+    text-transform: uppercase;
+    font-size: 0; /*remover os links*/
+    display:flex;
+}
+/*removedor de botão*/
+#toogle {
+    display: none;
+}
+/*configurações para que, quando clicado no botão menu, apareçam os links*/
+#toogle:checked + nav{
+    width:250px;
+    border-radius:5px;
+    padding:0 20px;
+    transition: 0,5s;
+}
+#toogle:checked + nav li{
+    border-bottom: dashed 1px rgb(166, 179, 159);
+    text-align: left;
+}
+#toogle:checked + nav li:last-child{
+    border: none;
+}
+#toogle:checked + nav a > span{
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 10px;
+}
+/*fim menu retratil*/
+/*Fim itens Aside*/
+/*Itens Principais*/
+main{
+    background-color: rgb(255, 247, 241);
+    grid-area: prin;
+    height:100%;
+    width:100%;
+    display: flex;
+}
+.caixamae{
+    margin-top: 20px;
+    margin-left:10%;
+    width:760px;
+    height:900px;
+}
+main h1{
+    margin-left: 39%;
+    color: #629280;
+}
+.produto{
+    width:150px
+}
+.lixo{
+    margin-top: 60px;
+    margin-left: 15px;
+    transition: 0,9s;
+}
+.lixo:hover{
+    transition: 0,7s;
+    filter:brightness(110%);
+}
+.lixoimg{
+    width:27px;
+}
+.tit, .mais, .menos, .preço, .num{
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 20px;
+    color:#629280;
+}
+main a{
+    color:#629280;
+    transition: 0,5s;
+}
+main a:hover{
+    color:#a7cabd
+}
+.card{
+    margin-left: 9%;
+    margin-top: 10%;
+    display:flex;
+    width:600px;
+    background-color: rgb(253, 255, 240);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(166, 179, 159);
+}
+.cupom{
+    border-radius: 30px;
+    background-color: #70A490;
+    display: block;
+    margin-top:10px;
+    height: 35px;
+    width: 100%;
+    text-align: center ;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+}
+.resg, .volte, .ok{
+    border-radius: 30px;
+    background-color: #70A490;
+    display: block;
+    margin-top:10px;
+    height: 35px;
+    width: 100%;
+    text-align: center ;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+}
+.cupom2{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #629280;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/*fim das caixas*/
+/*Fim itens principais*/
+/*Itens Rodapé*/
+footer{
+    background-color: rgb(253, 255, 240);
+    grid-area: rodap;
+    height: 150%; 
+    width: 100%;
+}
+/*configurações título*/
+.info{
+    margin-top: 20px;
+    color:#629280;
+    text-decoration: none;
+    text-align: center;
+}
+/*configurações imagem*/
+footer img{
+    width: 40px;
+    position: relative;
+    margin-top: 12%;
+}
+/*transição das imagens*/
+footer img:hover{
+    transition: 0,7s;
+    filter:brightness(110%);
+}
+/*Colocação da logo instagram*/
+.contas1{
+    position: absolute;
+    margin-left: 46%;
+}
+/*colocação da logo facebook*/
+.contas2{
+    position: absolute;
+    margin-left:50%;
+}
+/*configuração dos links de informações*/
+footer li{
+    list-style-type: none;
+}
+footer a{ 
+    color: inherit; 
+} 
+footer a:hover{
+    transition: 0,7s;
+    color:#a7cabd;
+}
+footer ul{
+    position:absolute;
+    top:50px;
+    width:100%;
+}
