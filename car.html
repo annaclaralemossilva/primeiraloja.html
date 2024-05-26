@@ -1,0 +1,224 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Link css-->
+    <link rel="stylesheet" href="car.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalize sua compra!</title>
+    <!--Link fonte usada  (peguei do google)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body onload="ola">
+    <!--Itens do corpo-->
+    <!--cabeçalho-->
+<header>
+        <!--Barra de pesquisa-->
+        <div class="pesquisa">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Pesquisar..." class="barra">
+                <button type="submit" class="botao"><img src="imagens/pesquisa.png" class="lupa"></button>
+            </form>
+        </div>
+        <!--fim barra de pesquisa-->
+        <!--imagem logotipo-->
+        <img src="imagens/logotipo.jpg" class="logotipo" alt="logo">
+        <!--menu header-->
+        <nav class="menu1">
+            <ul>
+                <!--inicio do menu-->
+                <li class="drop">
+                    <a href="#">Brincos</a>
+                    <!--opções de brincos-->
+                    <ul class="down">
+                        <li>
+                            <a href="#">Argola</a>
+                        </li>
+                        <li>
+                            <a href="#">Gancho</a>
+                        </li>
+                        <li>
+                            <a href="#">Chandelier</a>
+                        </li>
+                        <li>
+                            <a href="#">Stud</a>
+                        </li>
+                        <li>
+                            <a href="#">Ear Cuff</a>
+                        </li>
+                    </ul>
+                    <!--fim opções-->
+                </li>
+                <li class="drop">
+                    <a href="#">Colares</a>
+                    <!--opções de colares-->
+                    <ul class="down">
+                        <li>
+                            <a href="#">Corrente</a>
+                        </li>
+                        <li>
+                            <a href="#">Curto</a>
+                        </li>
+                        <li>
+                            <a href="#">Longo</a>
+                        </li>
+                        <li>
+                            <a href="#">Duplo</a>
+                        </li>
+                    </ul>
+                    <!--fim opções-->
+                </li>
+                <li>
+                    <a href="#">Pulseiras</a>
+                </li>
+                <li>
+                    <a href="#">Anéis</a>
+                </li>
+            <!--fim do menu-->
+            </ul>
+        </nav>
+</header>
+<!--Fim cabeçalho-->
+<!--Conteudo Secundario-->
+<aside>
+    <!--inicio Menu Retratil-->
+    <div id="red">
+        <label for="toogle"><img src="imagens/menu.png"class="menuimg"></label>
+        <input id="toogle" type="checkbox" name="menu2">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <!--icon-->
+                        <img src="imagens/home.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Ínicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!--icon-->
+                        <img src="imagens/coracao1.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Lista de Desejos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <!--icon-->
+                        <img src="imagens/perfil.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="car.html">
+                        <!--icon-->
+                        <img src="imagens/carrinho.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
+    <!--Fim menu retratil-->
+</aside>   
+<!--Fim conteudo secundario--> 
+<!--Conteudo principal-->
+<main class="maincontent"> 
+    <section class="caixamae">
+        <h1>Seu Carrinho</h1>
+        <!--Primeira compra-->
+        <div class="card">
+            <img src="imagens/anel.png" class="produto"> 
+            <h1 class="tit">Anel Borboleta</h1>
+            <div class="preço">
+                <h4>R$68,00</h4>
+            </div>
+            <div class="menos">
+                <a href="#">
+                    -
+                </a>
+            </div>
+            <div class="num">
+                1
+            </div>
+            <div class="mais">
+                <a href="#">
+                    +
+                </a>
+            </div>
+            <div class="lixo">
+                <img src="imagens/lixo.png" class="lixoimg">
+            </div>
+        </div>
+        <!--Segunda compra-->
+        <div class="card">
+            <img src="imagens/brinco.png" class="produto">
+            <h1 class="tit">Brinco de Rosas</h1>
+            <div class="preço">
+                <h4>R$36,00</h4>
+            </div>
+            <div class="menos">
+                <a href="#">
+                    -
+                </a>
+            </div>
+            <div class="num">
+                2
+            </div>
+            <div class="mais">
+                <a href="#">
+                    +
+                </a>
+            </div>
+            <div class="lixo">
+                <img src="imagens/lixo.png" class="lixoimg">
+            </div>
+        </div>
+        <form action="/submit" method="POST">
+            <!-- Campo para cupom -->
+        <label for="cupom">
+                <h4 class="cupom">CUPOM DE DESCONTO</h4>
+            <input type="text" id="cupom" name="cupom" class="cupom2"placeholder="XXXXX">
+            </label>
+        <div class="botoes">
+
+            <button><a href="#"><h2 class="resg">RESGATAR CUPOM</h2></a></button>
+            <!-- Botão de Voltar -->
+            <button><a href="index.html"><h2 class="volte">Voltar as compras</h2></a></button>
+            <!-- Botão de Finalizar compra-->
+            <button><a href="index.html"><h2 class="ok">Finalizar compra</h2></a></button>
+        </div>
+    
+    </section>
+
+</main>
+<!--Fim conteudo principal-->
+<!--inicio rodapé-->
+<footer>
+    <div class="contas">
+        <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" >
+            <img src="imagens/insta.png" class="contas1" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="imagens/face.png" class="contas2" alt="facebook">
+        </a>
+    </div>
+    <div class="info">
+        <h2>⊱Informações⊰</h3>
+        <a href="#"><h3>Sobre nós</a>
+        <a href="#"><h3>Formas de pagamento</h4></a>
+        <a href="#"><h4>Política de Privacidade</h4></a>
+        <a href="#"><h4>Trocas e Devoluções</h4></a>
+    </div>
+</footer>
+<!--Fim rodapé-->
+</body>
+<!--Fim itens do corpo-->
+</html>
+<!--Fim HTML-->
