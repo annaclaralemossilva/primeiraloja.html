@@ -71,36 +71,13 @@ header ul{
     display: inline-block;
     position: relative;
 }
-/*configurações menu down*/
+/*configurações menu*/
 .menu1 ul li a{
     display:block;
     color:#629280;
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
-}
-.menu1 ul li a :hover{
-    background-color: rgb(253, 255, 240);
-}
-/*desaparecimento menu down*/
-.menu1 .down{
-    display: none;
-    position: absolute;
-    min-width:100px;
-    z-index: 1;
-    background-color: rgb(253, 255, 240);
-}
-.menu1 .down li {
-    display: block;
-}
-.menu1 .down li a {
-    padding: 15px 14px;
-}
-.menu1 .down li a:hover {
-    background-color: rgb(253, 255, 240);
-}
-.menu1 .drop:hover .down {
-    display: block;
 }
 /*fim menu*/
 /*ínicio barra pesquisa*/
@@ -176,7 +153,7 @@ main ul{
     background-color: rgb(225, 255, 205);
     border-radius: 20px;
     width: 60px;
-    height: 1650px;
+    height:auto;
     position: inherit;
 }
 /*configurações dos links*/
@@ -202,7 +179,7 @@ main ul{
 }
 /*configurações para que, quando clicado no botão menu, apareçam os links*/
 #toogle:checked + nav{
-    width:250px;
+    width:300px;
     border-radius:5px;
     padding:0 20px;
     transition: 0,5s;

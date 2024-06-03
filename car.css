@@ -71,36 +71,13 @@ header ul{
     display: inline-block;
     position: relative;
 }
-/*configurações menu down*/
+/*configurações menu */
 .menu1 ul li a{
     display:block;
     color:#629280;
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
-}
-.menu1 ul li a :hover{
-    background-color: rgb(253, 255, 240);
-}
-/*desaparecimento menu down*/
-.menu1 .down{
-    display: none;
-    position: absolute;
-    min-width:100px;
-    z-index: 1;
-    background-color: rgb(253, 255, 240);
-}
-.menu1 .down li {
-    display: block;
-}
-.menu1 .down li a {
-    padding: 15px 14px;
-}
-.menu1 .down li a:hover {
-    background-color: rgb(253, 255, 240);
-}
-.menu1 .drop:hover .down {
-    display: block;
 }
 /*fim menu*/
 /*ínicio barra pesquisa*/
@@ -236,15 +213,22 @@ main{
     height:900px;
 }
 main h1{
-    margin-left: 39%;
+    margin-left: 50%;
+    color: #629280;
+}
+main h5{
+    position:absolute;
+    margin-left: 3%;
+    margin-top: 10%;
     color: #629280;
 }
 .produto{
-    width:150px
+    width:140px;
+    height:140px;
 }
 .lixo{
-    margin-top: 60px;
-    margin-left: 15px;
+    margin-top: 10%;
+    margin-left: 10%;
     transition: 0,9s;
 }
 .lixo:hover{
@@ -254,9 +238,9 @@ main h1{
 .lixoimg{
     width:27px;
 }
-.tit, .mais, .menos, .preço, .num{
+.tit, .preço{
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 20px;
     color:#629280;
 }
@@ -272,41 +256,23 @@ main a:hover{
     margin-top: 10%;
     display:flex;
     width:600px;
+    height:160px;
     background-color: rgb(253, 255, 240);
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgb(166, 179, 159);
 }
-.cupom{
+.volte, .ok{
+    padding: 5%;
     border-radius: 30px;
     background-color: #70A490;
     display: block;
-    margin-top:10px;
+    margin-top:20%;
     height: 35px;
     width: 100%;
     text-align: center ;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(240, 255, 250);
     transition: 1s;
-}
-.resg, .volte, .ok{
-    border-radius: 30px;
-    background-color: #70A490;
-    display: block;
-    margin-top:10px;
-    height: 35px;
-    width: 100%;
-    text-align: center ;
-    text-decoration: none;
-    color: aliceblue;
-    transition: 1s;
-}
-.cupom2{
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #629280;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 /*fim das caixas*/
 /*Fim itens principais*/
