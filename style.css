@@ -179,7 +179,7 @@ main ul{
 }
 /*configurações para que, quando clicado no botão menu, apareçam os links*/
 #toogle:checked + nav{
-    width:300px;
+    width:250px;
     border-radius:5px;
     padding:0 20px;
     transition: 0,5s;
@@ -212,6 +212,20 @@ main{
     flex-wrap:wrap;
     justify-content:center;
     padding: 20px;
+}
+@keyframes floating{
+    0%{
+        transform: translateY(0)
+        rotate(0);
+    }
+    50%{
+        transform: translatey(-15px)
+        rotate(4deg);
+    }
+    100%{
+        transform: translateY(0)
+        rotate(0);
+    }
 }
 /*configurações caixa*/
 .card{
@@ -250,6 +264,8 @@ main{
 }
 /*tamanho imagem*/
 .card img {
+    animation: floating 6s ease-out
+    infinite;
     height: 140px;
 }
 /*transição imagem*/

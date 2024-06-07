@@ -1,39 +1,182 @@
+<!--HTML-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--Link css-->
     <link rel="stylesheet" href="styleproduto.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUTO</title>
+    <title>Seja Bem Vindo(a)!</title>
+    <!--Link fonte usada  (peguei do google)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body onload="ola">
+    <!--Itens do corpo-->
+    <!--cabeçalho-->
+<header>
+        <!--Barra de pesquisa-->
+        <div class="pesquisa">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Pesquisar..." class="barra">
+                <button type="submit" class="botao"><img src="imagens/pesquisa.png" class="lupa"></button>
+            </form>
+        </div>
+        <!--fim barra de pesquisa-->
+        <!--imagem logotipo-->
         <img src="imagens/logotipo.jpg" class="logotipo" alt="logo">
-    </header>
-    <aside>
-
-    </aside>
-    <main>
-        <section class="caixamae">
-            <div class="card">
-                <img src="imagens/anel.png" class="anel" alt="anel">
+        <!--menu header-->
+        <nav class="menu1">
+            <ul>
+                <!--inicio do menu-->
+                <li>
+                    <a href="#">Brincos</a>
+                </li>
+                <li>
+                    <a href="#">Colares</a>
+                </li>
+                <li>
+                    <a href="#">Pulseiras</a>
+                </li>
+                <li>
+                    <a href="#">Anéis</a>
+                </li>
+                <!--fim do menu-->
+            </ul>
+        </nav>
+</header>
+<!--Fim cabeçalho-->
+<!--Conteudo Secundario-->
+<aside>
+    <!--inicio Menu Retratil-->
+    <div id="red">
+        <label for="toogle"><img src="imagens/menu.png"class="menuimg"></label>
+        <input id="toogle" type="checkbox" name="menu2">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <!--icon-->
+                        <img src="imagens/home.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Ínicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <!--icon-->
+                        <img src="imagens/coracao1.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Lista de Desejos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <!--icon-->
+                        <img src="imagens/perfil.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="car.html">
+                        <!--icon-->
+                        <img src="imagens/carrinho.png" class="iconf">
+                        <!--conteudo-->
+                        <span>Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div> 
+    <!--Fim menu retratil-->
+</aside>   
+<!--Fim conteudo secundario--> 
+<!--Conteudo principal-->
+<main class="maincontent">      
+    <section class="caixamae">
+        <div class="card">
+            <img src="imagens/anel.png" class="anel" alt="anel">
+        </div>
+    <div class="lado">
+        <h1 class="tit">Anel Borboleta</h1>
+            <div class="preço">
+                <h4>R$68,00</h4>
             </div>
-            </section>
-    </main>
-    <footer>
-        <div class="contas">
-            <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" ><img src="imagens/insta.png" class="insta" alt="instagram"></a>
+            <h2>Anel em Prata com Pedra Central em Formato de Borboleta </h2>
+            <fieldset>
+                <label for="aro"><h3>Aro</h3></label>
+                <select name="aro" id="aro">
+                    <option selected disabled value="option">Selecione</option>
+                    <option>5 cm</option>
+                    <option>6 cm</option>
+                    <option>7 cm</option>
+                    <option>8 cm</option>
+                    <option>9 cm</option>
+                    <option>10 cm</option>
+                    <option>11 cm</option>
+                    <option>12 cm</option>
+                    <option>13 cm</option>
+                    <option>14 cm</option>
+                    <option>15 cm</option>
+                    <option>16 cm</option>
+                    <option>17 cm</option>
+                    <option>18 cm</option>
+                    <option>19 cm</option>
+                    <option>20 cm</option>
+                    <option>21 cm</option>
+                    <option>22 cm</option>
+                    <option>23 cm</option>
+                    <option>24 cm</option>
+                    <option>25 cm</option>
+                    <option>26 cm</option>
+                    <option>27 cm</option>
+                    <option>28 cm</option>
+                    <option>29 cm</option>
+                    <option>30 cm</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="quantidade" placeholder="quantidade"><h3>Unidade(s)</h3></label>
+                <select name="pagamento" id="pagamento">
+                    <option selected disabled value="option">Selecione</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            </fieldset>
+        </div>
+        <a href="car.html"><h1 class="add">Adicionar ao Carrinho</h1></a>
+        </section>
+</main>
+<!--Fim conteudo principal-->
+<!--inicio rodapé-->
+<footer>
+    <div class="contas">
+        <a href="https://www.instagram.com/jardimencantadobiju/" target="_blank" >
+            <img src="imagens/insta.png" class="contas1" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="imagens/face.png" class="contas2" alt="facebook">
+        </a>
     </div>
-        <div class="info">
-        <h2>⊱Informações⊰</h2>
+    <div class="info">
+        <h2>⊱Informações⊰</h3>
         <a href="#"><h3>Sobre nós</a>
-        <a href="#"><h3>Formas de pagamento</h3></a>
-        <a href="#"><h3>Política de Privacidade</h3></a>
-        <a href="#"><h3>Trocas e Devoluções</h3></a>
+        <a href="#"><h3>Formas de pagamento</h4></a>
+        <a href="#"><h4>Política de Privacidade</h4></a>
+        <a href="#"><h4>Trocas e Devoluções</h4></a>
     </div>
-    </footer>
+</footer>
+<!--Fim rodapé-->
 </body>
+<!--Fim itens do corpo-->
 </html>
+<!--Fim HTML-->
