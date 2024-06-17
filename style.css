@@ -213,20 +213,6 @@ main{
     justify-content:center;
     padding: 20px;
 }
-@keyframes floating{
-    0%{
-        transform: translateY(0)
-        rotate(0);
-    }
-    50%{
-        transform: translatey(-15px)
-        rotate(4deg);
-    }
-    100%{
-        transform: translateY(0)
-        rotate(0);
-    }
-}
 /*configurações caixa*/
 .card{
     display:flex;
@@ -241,6 +227,7 @@ main{
     transition: 1s;
     position:relative;
     color: #5e6e68;
+    box-shadow: 2px 4px 5px rgb(166, 179, 159);
 }
 /*transição de caixa*/
 .card:hover{
@@ -293,7 +280,7 @@ footer{
 footer img{
     width: 40px;
     position: relative;
-    margin-top: 12%;
+    margin-top: 10%;
 }
 /*transição das imagens*/
 footer img:hover{
