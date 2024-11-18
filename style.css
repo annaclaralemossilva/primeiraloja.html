@@ -1,379 +1,232 @@
-/*Alterações gerais*/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Edu SA Beginner", cursive;
-    font-optical-sizing: auto;
-    font-style:normal;
-    font-weight: 600;
-    text-decoration:none;
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    /* fim da fonte */
+    margin: 0;/* grid */
+    display: grid;
+    grid-template-areas: "cab "
+                         "corp "
+                         "pe ";  
+    background-color: rgb(176,196,222);
+
 }
-/*Itens corpo*/
-body {
-    background-color: rgb(231, 141, 71);
-    display:grid;
-    grid-template-areas:
-    "cabe cabe cabe"
-    "brac prin prin"
-    "rodap rodap rodap";
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows:auto 1fr auto;
-    height: 100%;
-}
-li{
-    list-style-type: none;
-}
-/*Ínicio Header*/
+/* configuracoes do header */
 header{
-    background-color: rgb(253, 255, 240);
-    grid-area: cabe;
-    height: 230px;
-    width: 100%;
-}
-/*Configurações logotipo*/
-.logotipo{
-    width: 200px;
-    margin: auto;
-    display:block;
-    transition:1s;
-}
-/*Transição logotipo*/
-.logotipo:hover{
-    width: 220px;
-}
-/*Transição links*/
-a:hover{
-    transition: 0,7s;
-    color:#a7cabd;
-}
-/*posição menu*/
-header ul{
-    position:absolute;
-    top:50px;
-    width:100%;
-}
-/*posição configurações*/
-.menu1 ul{
-    list-style-type:none;
-    padding-left: 38%;
-    padding-top: 9%;
-    max-width: 400px;
-}
-/*transição menu down*/
-.menu1 a{
-    transition: 0s;
-}
-.menu1 a:hover{
-    color:#a7cabd
-}
-/*fim transição menu down*/
-.menu1 ul li{
-    display: inline-block;
+    grid-area: cab;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 135px;
+    /* position: absolute; */
+ }
+
+ header h1{
+    text-align: center;
+    color: #e6eefa;
+    font-size: xx-large;
+    background-color: #31769e;
+    margin-top: 40px;
+ }
+
+ .logo{
+    align-items: center;
+    text-align: center;
+    margin-left: 650px;
+ }
+
+ /* configuraçao do menu */
+header{
     position: relative;
 }
-/*configurações menu*/
-.menu1 ul li a{
-    display:block;
-    color:#629280;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration:none;
-}
-/*fim menu*/
-/*ínicio barra pesquisa*/
-/*configurações barra*/
-.barra {
-    background-color: rgb(252, 253, 243);
-    padding: 10px;
-    border-radius: 20px;
-    width: 300px;
-    border-color: #629280;
-    transition: 0s;
-}
-/*transição barra*/
-.barra:hover {
-    border-color: #629280;
-}
-/*display formulário*/
-form{
-    display: flex;
-    align-items:center;
-}
-/*configurações de pesquisa*/
-.pesquisa{
+.menu{
     position: absolute;
-    left: 75%;
-    width: 300px;
-    padding: 10px 15px;
-    border-radius: 25px 0 0 25px;
-    outline: none;
-    border: none;
+    top: 0;
 }
-.pesquisa:focus{
-    border-color:#629280;
-}
-/*configuração de botão*/
-.botao{
-    padding: auto;
-    border:none;
-    cursor: pointer;
-    background-color: rgb(253, 255, 240);
-}
-/*icone lupa tamanho*/
-.lupa{
-    width:40px
-}
-/*Fim barra de pesquisa*/
-/*Fim de itens Header*/
-/*Itens Menu secundario*/
-/*configurações aside*/
-aside{
-    background-color: rgb(255, 247, 241);
-    grid-area:brac;
-    height:auto;
-    width: auto;
-    position: relative;
-    grid-template-columns:auto;
-    grid-template-rows: auto auto auto auto;
-    display: flex;
-}
-/*tamanho  imagem de menu*/
-.menuimg{
-    width:30px;    
-}
-/*tamanho icones do menu*/
-.iconf{
-    width:30px;
-}
-main ul{
-    padding: 0%;
-}
-/*tamanho menu sem o click*/
-#red nav{
-    background-color: rgb(225, 255, 205);
+
+.menu nav{
+    background-color: white;
     border-radius: 20px;
-    width: 60px;
-    height:auto;
-    position: inherit;
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
 }
-/*configurações dos links*/
-#red li{
-    color: #629280;
+.menu li{
+    list-style: none;
+    color: #fffbfb;
     padding: 10px;
-    font-size:15px;
     text-align: center;
+    font-size: 23px;
 }
-#red li > a{
-    color: #629280;
+.menu li a{
+    color:#000000;
     text-decoration: none;
 }
-/*fim configurações de link*/
-#red a > span{
+.menu a span{
+    font-size: 0;
+    display: block;
     text-transform: uppercase;
-    font-size: 0; /*remover os links*/
-    display:flex;
+    transition: all 0.5s ease;
 }
-/*removedor de botão*/
-#toogle {
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+
+.botaoz{
     display: none;
+    color: #72CBFF;
 }
-/*configurações para que, quando clicado no botão menu, apareçam os links*/
-#toogle:checked + nav{
-    width:250px;
-    border-radius:5px;
-    padding:0 20px;
-    transition: 0,5s;
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
 }
-#toogle:checked + nav li{
-    border-bottom: dashed 1px rgb(166, 179, 159);
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(30, 28, 116) ;
     text-align: left;
 }
-#toogle:checked + nav li:last-child{
+
+.botaoz:checked+nav li:last-child{
     border: none;
 }
-#toogle:checked + nav a > span{
+
+.botaoz:checked+nav a span{
     font-size: 16px;
     display: inline-block;
+    text-transform: uppercase;
     padding-left: 10px;
 }
-/*fim menu retratil*/
-/*Fim itens Aside*/
-/*Itens Principais*/
-main{
-    background-color: rgb(255, 247, 241);
-    grid-area: prin;
-    height:100%;
-    width:100%;
-    display: flex;
+
+.fa-bars:hover{
+    color: white;
+    text-shadow: 1px 1px 8px #fcdbe4;
 }
-/*configurações caixa mãe*/
-.caixamae{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    padding: 20px;
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px white;
 }
-/*configurações caixa*/
-.card{
-    display:flex;
-    border-radius: 5px;
-    background-color: rgb(253, 255, 240);
-    width: 250px;
-    height: 350px;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    margin: 30px;
-    transition: 1s;
-    position:relative;
-    color: #5e6e68;
-    box-shadow: 2px 4px 5px rgb(166, 179, 159);
-}
-/*transição de caixa*/
-.card:hover{
-    background-color:rgba(237, 234, 234);
-}
-/*configurações botão da caixa*/
-.card a{
-    border-radius: 30px;
-    background-color: #70A490;
-    display: block;
-    height: 25px;
-    width: 110px;
-    text-align: center;
-    text-decoration: none;
-    color: aliceblue;
-    transition: 1s;
-}
-/*transição botão*/
-.card a:hover{
-    background-color:#629280;
-}
-/*tamanho imagem*/
-.card img {
-    animation: floating 6s ease-out
-    infinite;
-    height: 140px;
-}
-/*transição imagem*/
-.card img:hover{
-    transition: 1s;
-    filter: brightness(110%);
-}
-/*fim das caixas*/
-/*Fim itens principais*/
-/*Itens Rodapé*/
-footer{
-    background-color: rgb(253, 255, 240);
-    grid-area: rodap;
-    height: 150%; 
-    width: 100%;
-}
-/*configurações título*/
-.info{
+
+
+.icon{
+    width: 70px;
     margin-top: 20px;
-    color:#629280;
-    text-decoration: none;
+
+}
+/* final das configuracoes do menu */
+
+ /* fim configuracoes do header */
+
+ 
+ /* configuracoes main */
+ main{
+    grid-area: corp;
+    background-color:   #97c2dd;
+    display: flex;
+    justify-content: center;
+    height: auto;
+ }
+
+ /* configuraçoes do card */
+ .card{
+    margin-top: 55px;
+    margin-bottom: 60px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 900px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px rgba(97, 97, 139, 0.849);
     text-align: center;
 }
-/*configurações imagem*/
-footer img{
-    width: 40px;
+.card input{
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+/* configuraçao das letras */
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    color: #325a85;
+}
+h3{
+    margin:5px ;
+    font-size: 30px;
+    color: #3f3f47;
+}
+
+/* configuraçao dos botoes */
+button{
+    background-color:rgb(70,130,180) ;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 65px;
+    font-size: 25px;
+    border:solid 2px;
+    transition: 1s;
+}
+button:hover{
+    box-shadow:1px 2px 3px 3px #ff0b0b00;
+    transform: scale(1.1);
+}
+
+/* configuraçao do resultado */
+.valor{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
+}
+/* fim das configuraçoes do card */
+ /* fim das configuracoes main */
+
+
+ /* configuracoes do footer */
+ footer{
     position: relative;
-    margin-top: 10%;
+    width: 100%;
+    bottom: 0;
+    grid-area: pe;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 210px;
+ }
+.robozinho{
+    width: 200px;
+    margin-top: 20px;
+    margin: 15px;
 }
-/*transição das imagens*/
-footer img:hover{
-    transition: 0,7s;
-    filter:brightness(110%);
+  /*fim das configuracoes do footer */
+  /*responsividade*/
+@media(max-width:800px) {
+    .logo{
+        width: 490px;
+    }
+
 }
-/*Colocação da logo instagram*/
-.contas1{
-    position: absolute;
-    margin-left: 46%;
+@media(max-width:600px) {
+    .logo{
+        margin-top: 11px;
+        width: 430px;
+    }
+    .icon{
+        width: 60px;
+        margin-top: 30px;
+    }
+    
 }
-/*colocação da logo facebook*/
-.contas2{
-    position: absolute;
-    margin-left:50%;
+@media(max-width:480px) {
+    .logo{
+        width: 400px;
+    }
 }
-/*configuração dos links de informações*/
-footer li{
-    list-style-type: none;
-}
-footer a{ 
-    color: inherit; 
-} 
-footer a:hover{
-    transition: 0,7s;
-    color:#a7cabd;
-}
-footer ul{
-    position:absolute;
-    top:50px;
-    width:100%;
-}
-/*fim configurações itens de infomações/*
-/*fim itens Rodapé*/
-/*Responsividade*/
-/*@media(max-width:820px) {
-   body{
-        min-width: 400px;
-        max-width: 820px;
-        grid-template-areas: 
-        "cabe"
-        "brac"
-        "prin"
-        "rodap";
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 50px 500px 200px;
-    }
-    aside{
-        background-color: rgb(255, 231, 213);
-        grid-area:brac;
-        height:1%;
-        width: 1%;
-        position: relative;
-        grid-template-columns:auto;
-        grid-template-rows: auto auto auto auto;
-    }
-@media(max-width:470px){
-    body{
-        grid-template-areas: 
-        "cabe"
-        "secn"
-        "prin"
-        "rodap";
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 470px 100px;
-    }
-    header{
-        width: 100%;
-        height:150px;
-    }
-    .logotipo{
-        width: 130px;
-    }
-    /*Transição logotipo*/
-    /*.logotipo:hover{
-        width: 130px;
-    }
-    .barra {
-        padding: 5px;
-        border-radius: 20px;
-        width: 150px;
-    }
-    .pesquisa{
-        left: 50%;
-        width: 300px;
-        padding: 2px 10px;
-    }
-    .lupa{
-        width:25px;
-    }
-    .menu1 a{
-        font-size: 10px;
-    }
-    .menu1 .down{
-        min-width: 60px;
-    }*/
+/*fim da responsividade*/
+

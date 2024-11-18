@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    /* fim da fonte */
+    margin: 0;/* grid */
+    display: grid;
+    grid-template-areas: "cab "
+                         "corp  "
+                         "pe ";
+    /* grid-template-columns: 200px 200px ; */
+    /* grid-template-rows: 1fr 2fr 2fr  1fr; */
+    
+    background-color: aliceblue;
+}
+/* inicio das configuraçoes do header */
+header {
+    grid-area: cab;
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 135px;
+    
+}
+.box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+/*ajustes de logo*/
+.logo{
+    justify-content: center;
+    text-align: center;  
+}
+
+.logodiv{
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* configuraçoes das divs */
+.perguntas1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width:55%;
+    background-color:#fffbfb;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
+}
+/* * configuraçao do menu */
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
+}
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+
+.botaoz{
+    display: none;
+    color:#31769e
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(63, 116, 167) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: rgb(217, 243, 255);
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px rgb(217, 243, 255);
+}
+
+.icon{
+    width: 70px;
+    margin-top: 20px;
+}
+
+.chat{
+    position: relative;
+    left: 60px;
+}
+
+/* inicio das configuraçoes do corpo */
+main {
+    background-color: #97c2dd;
+    grid-area: corp;
+    padding: 20px;
+
+}
+
+/* configuraçoes das letras */
+h2{
+    color:rgba(24, 32, 105, 0.938);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* configuraçao do botao */
+button{
+    margin-top: 20px;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    border:solid 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 1s;
+}
+button:hover{
+    box-shadow:1px 2px 3px 3px #ff0b0b00;
+    transform: scale(1.1);
+
+}
+
+/* configuraçao do resultado */
+.certa{
+    margin-bottom: 15px;
+    color: rgb(60, 168, 27);
+    font-size: 30px;
+    margin: 10px;
+}
+.errada{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
+    margin: 10px;
+}
+/* fim das configuraçoes do corpo */
+
+/*inicio das configuraçoes do rodape   */
+footer {
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    padding: 20px;
+    text-align: left;
+    grid-area: pe;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+/*mascote*/
+.robo{
+    width: 200px;
+    position: absolute;
+}
+/* fim das configuraçoes do footer */
+/*responsividade*/
+@media(max-width:800px) {
+    .logo{
+        width: 490px;
+    }
+
+}
+@media(max-width:600px) {
+    .logo{
+        margin-top: 11px;
+        width: 430px;
+    }
+    .icon{
+        width: 60px;
+        margin-top: 30px;
+    }
+    
+}
+@media(max-width:480px) {
+    .logo{
+        width: 400px;
+    }
+}
+/*fim da responsividade*/

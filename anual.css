@@ -1,0 +1,237 @@
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    /* fim da fonte */
+    margin: 0;/* grid */
+    display: grid;
+    grid-template-areas: "cab "
+                         "corp  "
+                         "pe ";
+    /* grid-template-columns: 200px 200px ; */
+    /* grid-template-rows: 1fr 2fr 2fr  1fr; */
+    
+    background-color: #97c2dd;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .menu {
+        width:100%;
+    }
+    body{
+        grid-template-areas: 
+        "cab"
+        "corp"
+        "pe";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto;
+    }
+    .logo{
+        display: flex;
+    }
+}
+/* fim das configuraçoes do grid */
+/* inicio das configuraçoes do header */
+header {
+    text-align: center;
+    grid-area: cab;/*grid*/
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 135px;
+    position: relative;
+
+    
+}
+/*ajustes de logo*/
+.logo{
+    justify-content: center;
+    text-align: center;  
+}
+
+.logodiv{
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ main{
+    grid-area: corp;
+    background-color: #97c2dd;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem */
+    justify-content: center; /* Centraliza os cartões */ 
+ }
+
+.tabela1{
+    /* background-color: #31769e;
+    width: 1000px;
+    height: 100px; */
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
+    margin: 10px; /* Margem entre os cartões */
+    border-radius: 8px;
+    width: 860px; /* Largura dos cards */
+    position: relative;
+    left: 380px;
+}
+
+.kiwi{
+    text-align: center;
+    background-color: #328dc2;
+    color: aliceblue;
+}
+footer{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    grid-area: pe;
+    background-color:  rgba(3, 12, 94, 0.938);
+    height: 135px;
+ }
+ /*mascote*/
+.robo{
+    bottom: 2%;
+    width: 200px;
+    position: absolute;
+}
+ 
+ /* footer{
+     grid-area: pe;
+     background-color: rgb(70,130,180);
+     height: 100px;
+     position: relative;
+ } */
+
+
+/* inicio das configuraçoes do card */
+h3{
+    margin:5px ;
+}
+
+button{
+    background-color:rgb(70,130,180) ;
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    border:solid 2px;
+} 
+
+.toop{
+    background-color: aliceblue;
+}
+/* fim das configuraçoes do card */
+
+/* configuraçao do menu retratil*/
+.menu{
+    position: absolute;
+    top: 0;
+}
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+/*configurações do botão do menu retratil*/
+.botaoz{
+    display: none;
+    color: #3e88b3;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(63, 116, 167) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: rgb(217, 243, 255);
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px rgb(217, 243, 255);
+}
+.icon{
+    width: 70px;
+    margin-top: 20px;
+}
+.chat{
+    position: relative;
+    left: 60px;
+}
+/* final menu */
+/*responsividade*/
+@media(max-width:800px) {
+    .logo{
+        width: 490px;
+    }
+
+}
+@media(max-width:600px) {
+    .logo{
+        margin-top: 11px;
+        width: 430px;
+    }
+    .icon{
+        width: 60px;
+        margin-top: 30px;
+    }
+    
+}
+@media(max-width:480px) {
+    .logo{
+        width: 400px;
+    }
+}
+/*fim da responsividade*/
